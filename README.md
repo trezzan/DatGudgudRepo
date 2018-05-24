@@ -6,8 +6,8 @@ Time spent: **5** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
-The six possible exploits are:
-* Username Enumeration
+The six possible exploits and their corresponding sites are:
+* Username Enumeration - Red
 * Insecure Direct Object Reference (IDOR)
 * SQL Injection (SQLi)
 * Cross-Site Scripting (XSS)
@@ -19,22 +19,27 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: __________________
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
 Vulnerability #2: __________________
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Session Hijacking
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
 Vulnerability #2: __________________
-
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: User Enumeration
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
-Vulnerability #2: __________________
+Vulnerability #2: IDOR
+![](https://raw.githubusercontent.com/trezzan/RepoBoi/master/UserEnumeration.gif)
 
 
 ## Notes
