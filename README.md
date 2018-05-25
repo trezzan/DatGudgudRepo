@@ -18,10 +18,10 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: TBD
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/BlueSOMETHING.gif)
 
-Vulnerability #2: __________________
+Vulnerability #2: TBD
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/BlueSOMETHING.gif)
 
 
@@ -31,7 +31,7 @@ Vulnerability #1: Session Hijacking
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/GreenHijack.gif)
 
 
-Vulnerability #2: __________________
+Vulnerability #2: TBD
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/GreenSOMETHING.gif)
 
 ## Red
@@ -44,20 +44,26 @@ Vulnerability #2: IDOR
 
 ## Concept Review
 
-![ ] Which attacks were easiest to execute? Which were the most difficult?
-* Test answer goes here. 
+![] Which attacks were easiest to execute? Which were the most difficult?
+* The user enumeration and IDOR were the easiest. SQLi has been a dead end mostly because I have exhausted places to inject. 
 
- ![ ] What is a good rule of thumb which would prevent accidentally username enumeration vulnerabilities like the one created here?
+ ![] What is a good rule of thumb which would prevent accidentally username enumeration vulnerabilities like the one created here?
+ * Users being enumerated in an ascending order is a bit simple. Also, making the userId an object and openly referencing it is a no-no.
 
-![ ] Since you should be somewhat familiar with the CMS and how it was coded, can you think of another resource which could be made vulnerable to an Insecure Direct Object Reference? What code could be removed which would expose it? (Hint: It was also the answer to the first bonus objective to the Weekly Assignment for week 3.)
+![] Since you should be somewhat familiar with the CMS and how it was coded, can you think of another resource which could be made vulnerable to an Insecure Direct Object Reference? What code could be removed which would expose it? (Hint: It was also the answer to the first bonus objective to the Weekly Assignment for week 3.)
+* I am not, yet. 
 
-![ ] Many SQL Injections use OR as part of the injected code. (For example: ' OR 1=1 --'.) Could AND work just as well in place of OR? (For example: ' AND 1=1 --'.) Why or why not?
+![] Many SQL Injections use OR as part of the injected code. (For example: ' OR 1=1 --'.) Could AND work just as well in place of OR? (For example: ' AND 1=1 --'.) Why or why not?
+* No, the boolean for AND implies that both are true. Since we are purposefully ignoring the first part of the SQL statement, it should not be included. Using OR allows us to ignore it. 
 
-![ ] A stored XSS attack requires patience because it could be stored for months before being triggered. Because of this, what important ingredient would an attacker most likely include in a stored XSS attack script?
+![] A stored XSS attack requires patience because it could be stored for months before being triggered. Because of this, what important ingredient would an attacker most likely include in a stored XSS attack script?
+* I am not sure. I am going to guess a trigger?
 
-![ ]  Imagine that one of your classmates is an authorized admin for the site's CMS and you are not. How would you get them to visit the self-submitting, hidden form page you created in Objective #5 (CSRF)?
+![]  Imagine that one of your classmates is an authorized admin for the site's CMS and you are not. How would you get them to visit the self-submitting, hidden form page you created in Objective #5 (CSRF)?
+* Maybe sending an IM with a link?
 
-![ ]  Compare session hijacking and session fixation. Which attack do you think is easier for an attacker to execute? Why? One of them is much easier to defend against than the other. Which one and why?
+![]  Compare session hijacking and session fixation. Which attack do you think is easier for an attacker to execute? Why? One of them is much easier to defend against than the other. Which one and why?
+* Session Hiojacking is easier to pull off because the SID can be grabbed passively via wireshark. Session fixation requires some sort of access to the victim's computer to plant. Encrypting traffic on all levels will make session hijacking very difficult if not impossible to achieve. 
 
 ## Notes
 
