@@ -42,6 +42,22 @@ Vulnerability #1: User Enumeration
 Vulnerability #2: IDOR
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/RedIdor.gif)
 
+## Concept Review
+
+![ ] Which attacks were easiest to execute? Which were the most difficult?
+* Test answer goes here. 
+
+ ![ ] What is a good rule of thumb which would prevent accidentally username enumeration vulnerabilities like the one created here?
+
+![ ] Since you should be somewhat familiar with the CMS and how it was coded, can you think of another resource which could be made vulnerable to an Insecure Direct Object Reference? What code could be removed which would expose it? (Hint: It was also the answer to the first bonus objective to the Weekly Assignment for week 3.)
+
+![ ] Many SQL Injections use OR as part of the injected code. (For example: ' OR 1=1 --'.) Could AND work just as well in place of OR? (For example: ' AND 1=1 --'.) Why or why not?
+
+![ ] A stored XSS attack requires patience because it could be stored for months before being triggered. Because of this, what important ingredient would an attacker most likely include in a stored XSS attack script?
+
+![ ]  Imagine that one of your classmates is an authorized admin for the site's CMS and you are not. How would you get them to visit the self-submitting, hidden form page you created in Objective #5 (CSRF)?
+
+![ ]  Compare session hijacking and session fixation. Which attack do you think is easier for an attacker to execute? Why? One of them is much easier to defend against than the other. Which one and why?
 
 ## Notes
 
