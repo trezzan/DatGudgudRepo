@@ -10,7 +10,7 @@ The six possible exploits and their corresponding sites are:
 * Username Enumeration - **Red**
 * Insecure Direct Object Reference (IDOR) - **Red**
 * SQL Injection (SQLi)
-* Cross-Site Scripting (XSS)
+* Cross-Site Scripting (XSS) - **Green**
 * Cross-Site Request Forgery (CSRF)
 * Session Hijacking/Fixation - **Green**
 
@@ -31,8 +31,8 @@ Vulnerability #1: Session Hijacking
 ![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/GreenHijack.gif)
 
 
-Vulnerability #2: TBD
-![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/GreenSOMETHING.gif)
+Vulnerability #2: Stored XSS
+![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/GreenXSS.gif)
 
 ## Red
 
@@ -57,7 +57,7 @@ Vulnerability #2: IDOR
 * No, the boolean for AND implies that both are true. Since we are purposefully ignoring the first part of the SQL statement, it should not be included. Using OR allows us to ignore it. 
 
 ![] A stored XSS attack requires patience because it could be stored for months before being triggered. Because of this, what important ingredient would an attacker most likely include in a stored XSS attack script?
-* I am not sure. I am going to guess a trigger?
+* I am not sure. I am going to guess a trigger that makes the admin want to navigate to the stored XSS.
 
 ![]  Imagine that one of your classmates is an authorized admin for the site's CMS and you are not. How would you get them to visit the self-submitting, hidden form page you created in Objective #5 (CSRF)?
 * Maybe sending an IM with a link?
