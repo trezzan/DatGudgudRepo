@@ -2,7 +2,7 @@
 Week 8
 # Project 8 - Pentesting Live Targets
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -18,11 +18,13 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: TBD
-![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/BlueSOMETHING.gif)
+Vulnerability #1: ATTEMPTED|FAILED
+**SQLi** was deemed inneffective on the contact and login pages. These are the main two pages that have input fields. Also, attempting various SQLi in the URL also left no results. Some friends suggested using a tool like SQL map, however I do not have the skillset nor the time to take on learning another tool right now. That will be my next stepping stone in attempts if I ever get back to this task. 
+![](https://i.giphy.com/media/A1SxC5HRrD3MY/giphy.gif)
 
-Vulnerability #2: TBD
-![](https://raw.githubusercontent.com/trezzan/DatGudgudRepo/master/BlueSOMETHING.gif)
+Vulnerability #2: ATTEMPTED|FAILED
+**CSRF** was a failed endeavor on these sites. Take the point of view of a non-logged-in user, I could not find any effective leaks on information with which to change headers or requests. From what I understand, many classmates used information they acquired while logged in, but I did not think that made sense. Is CSRF only effective if hackers have gained login access? If so, why bother the CSRF. All attempts to modify requests yielded no interesting results.
+![](https://i.giphy.com/media/A1SxC5HRrD3MY/giphy.gif)
 
 
 ## Green
@@ -63,7 +65,7 @@ Vulnerability #2: IDOR
 * Maybe sending an IM with a link?
 
 ![]  Compare session hijacking and session fixation. Which attack do you think is easier for an attacker to execute? Why? One of them is much easier to defend against than the other. Which one and why?
-* Session Hiojacking is easier to pull off because the SID can be grabbed passively via wireshark. Session fixation requires some sort of access to the victim's computer to plant. Encrypting traffic on all levels will make session hijacking very difficult if not impossible to achieve. 
+* Session Hijacking is easier to pull off because the SID can be grabbed passively via wireshark. Session fixation requires some sort of access to the victim's computer to plant. Encrypting traffic on all levels will make session hijacking very difficult if not impossible to achieve. 
 
 ## Notes
 
