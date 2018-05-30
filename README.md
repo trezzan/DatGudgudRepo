@@ -20,10 +20,12 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: ATTEMPTED|FAILED
 **SQLi** was deemed inneffective on the contact and login pages. These are the main two pages that have input fields. Also, attempting various SQLi in the URL also left no results. Some friends suggested using a tool like SQL map, however I do not have the skillset nor the time to take on learning another tool right now. That will be my next stepping stone in attempts if I ever get back to this task. 
+
 ![](https://i.giphy.com/media/A1SxC5HRrD3MY/giphy.gif)
 
 Vulnerability #2: ATTEMPTED|FAILED
 **CSRF** was a failed endeavor on these sites. Take the point of view of a non-logged-in user, I could not find any effective leaks on information with which to change headers or requests. From what I understand, many classmates used information they acquired while logged in, but I did not think that made sense. Is CSRF only effective if hackers have gained login access? If so, why bother the CSRF. All attempts to modify requests yielded no interesting results.
+
 ![](https://i.giphy.com/media/A1SxC5HRrD3MY/giphy.gif)
 
 
